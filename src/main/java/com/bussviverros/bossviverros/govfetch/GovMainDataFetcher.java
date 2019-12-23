@@ -17,7 +17,8 @@ public class GovMainDataFetcher {
 
     public static GovMainDataFetcher getInstance() {
         if (null == instance) {
-            return new GovMainDataFetcher();
+            instance = new GovMainDataFetcher();
+            return instance;
         } else {
             return instance;
         }
